@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ======================= FAVICON ======================= -->
+    <link rel="shortcut icon" href="/assets/img/logo.png" type="image/x-icon">
+
+    <!-- ======================= REMIXICONS ======================= -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+    <!-- ======================= CSS ======================= -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- ======================= TITLE ======================= -->
+    <title>LaslesVPN</title>
+</head>
+
+<body>
+
+    <!-- ======================= HEADER & NAV ======================= -->
+    <header class="header" id="header">
+        <nav class="nav container">
+
+            <!-- LOGO -->
+            <a href="#" class="nav__logo">
+                <img src="assets/img/logo.png" alt="logo">
+                <span class="nav__vpn">Lasles<b>VPN</b></span>
+            </a>
+
+            <!-- Nav Menu -->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__ul">
+
+                    <li class="nav__li">
+                        <a href="#home" class="nav__link active-link">About</a>
+                    </li>
+
+                    <li class="nav__li">
+                        <a href="#features" class="nav__link">Features</a>
+                    </li>
+
+                    <li class="nav__li">
+                        <a href="#price" class="nav__link">Pricing</a>
+                    </li>
+
+                    <li class="nav__li">
+                        <a href="#testimonial" class="nav__link">Testimonials</a>
+                    </li>
+
+                    <li class="nav__li">
+                        <a href="#help" class="nav__link">Help</a>
+                    </li>
+
+                </ul>
+
+                <!-- Nav Action -->
+                <div class="nav__action">
+
+                    <!-- sign In -->
+                    <a class="nav__signIn" id="nav-signin">Sign In</a>
+
+                    <!-- sign Up -->
+                    <a class="nav__signUp" id="nav-signup">Sign Up</a>
+
+                </div>
+
+                <!-- Close button -->
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-line"></i>
+                </div>
+
+            </div>
+
+            <div class="nav__last">
+
+                <!-- Theme button -->
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                <!-- toggle button -->
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- ======================= SIGN IN ======================= -->
+    <div class="signin grid" id="signin-content">
+        <form action="" class="signin__form grid">
+            <!-- Head -->
+            <h3 class="signin__title nowrap">Sign In</h3>
+
+            <!-- signin box -->
+            <div class="signin__group grid">
+                <div>
+                    <label for="signin-email" class="signin__label">Email</label>
+                    <input type="email" placeholder="Write your email" class="signin__input" id="signin-email">
+                </div>
+
+                <div>
+                    <label for="signin-pass" class="signin__label">Password</label>
+                    <input type="password" placeholder="Enter your password" class="signin__input" id="signin-pass">
+                </div>
+            </div>
+
+            <!-- Signup / forgot -->
+            <div>
+                <span class="signin__signup">
+                    You do not have an account? <a href="#" id="signup-onclick" class="nowrap">Sign up</a>
+                </span>
+
+                <a href="#" class="signin__forgot">
+                    Forgot Password?
+                </a>
+
+                <!-- signin button -->
+                <button type="submit" class="signin__button button" id="signin-button">Sign In</button>
+            </div>
+        </form>
+
+        <!-- Close button -->
+        <i class="ri-close-line signin__close" id="signin-close"></i>
+    </div>
+
+    <!-- ======================= SIGN UP ======================= -->
+    <div class="signup grid" id="signup-content">
+        <form action="" class="signup__form grid">
+            <!-- head -->
+            <h3 class="signup__title">Sign Up</h3>
+
+            <!-- signup box -->
+            <div class="signup__group grid">
+                <div>
+                    <label for="signup-email" class="signup__label">Name</label>
+                    <input type="text" placeholder="Enter your name" class="signup__input" id="signup-email">
+                </div>
+
+                <div>
+                    <label for="signup-pass" class="signup__label">Create New Password</label>
+                    <input type="password" placeholder="Enter your password" class="signup__input" id="signup-pass">
+                </div>
+
+                <div>
+                    <label for="signup-pass" class="signup__label">Confirm New Password</label>
+                    <input type="password" placeholder="Re-enter your password" class="signup__input" id="signup-pass">
+                </div>
+            </div>
+
+            <div>
+                <span class="signup__signup">
+                    You have an account? <a href="#" id="signin-onclick" class="nowrap">Sign In</a>
+                </span>
+
+                <!-- signup button -->
+                <button type="submit" class="signup__button button" id="signup-button">Sign Up</button>
+            </div>
+        </form>
+
+        <!-- Close button -->
+        <i class="ri-close-line signup__close" id="signup-close"></i>
+    </div>
+
+    <!-- ======================= MAIN ======================= -->
+    <main class="main">
+
+        <!-- ======================= HOME ======================= -->
+        <section class="section home" id="home">
+            <div class="home__container container grid">
+
+                <div class="home__data">
+                    <h1 class="home__title">
+                        Want anything to be easy with <span style="font-weight: 800;">LaslesVPN</span>
+                    </h1>
+                    <p class="home__description">
+                        Provide a network for all your needs with ease and fun using LaslesVPN discover interesting
+                        features from us.
+                    </p>
+                    <button class="button">Get Started</button>
+                </div>
+
+                <div class="home__image">
+                    <img src="assets/img/Illustration 1.svg" alt="images" class="home__img">
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= SERVICE ======================= -->
+        <section class="section services">
+            <div class="services__container container grid">
+                <div class="services__cards">
+                    <img src="assets/img/user.png" alt="user" class="services__img">
+                    <div class="services__data">
+                        <h3 class="services__title">
+                            90+
+                        </h3>
+                        <p class="services__description">
+                            Users
+                        </p>
+                    </div>
+                </div>
+
+                <div class="services__cards">
+                    <img src="assets/img/location.png" alt="user" class="services__img">
+                    <div class="services__data">
+                        <h3 class="services__title">
+                            30+
+                        </h3>
+                        <p class="services__description">
+                            Locations
+                        </p>
+                    </div>
+                </div>
+
+                <div class="services__cards">
+                    <img src="assets/img/Server.png" alt="user" class="services__img">
+                    <div class="services__data">
+                        <h3 class="services__title">
+                            50+
+                        </h3>
+                        <p class="services__description">
+                            Servers
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= FEATURES ======================= -->
+        <section class="section features" id="features">
+            <div class="features__container container grid">
+                <div class="features__data">
+                    <h1 class="features__title">
+                        We Provide Many Features <br> You Can Use
+                    </h1>
+                    <p class="features__description">
+                        You can explore the features that we provide with fun and have their own functions each feature.
+                    </p>
+
+                    <ul class="features__ul">
+                        <li class="features__li">
+                            <img src="assets/img/green_tick.svg" alt=""> Powerfull online protection.
+                        </li>
+                        <li class="features__li">
+                            <img src="assets/img/green_tick.svg" alt="">Internet without borders.
+
+                        </li>
+                        <li class="features__li">
+                            <img src="assets/img/green_tick.svg" alt="">Supercharged VPN
+                        </li>
+                        <li class="features__li">
+                            <img src="assets/img/green_tick.svg" alt="">No specific time limits.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- features image -->
+                <div class="features__image">
+                    <img src="assets/img/Illustration 2.svg" alt="Illustration" class="features__img">
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= PRICE ======================= -->
+        <section class="section price" id="price">
+            <h1 class="section__title">
+                Choose your plan
+            </h1>
+            <p class="price__description">
+                Let's choose the package that is best for you and explore it happily and cheerfully.
+            </p>
+
+            <div class="price__container container grid">
+                <!-- free -->
+                <article class="price__card">
+                    <img src="assets/img/Free.png" alt="free" class="price__img">
+
+                    <h2 class="price__plan">
+                        Free Plan
+                    </h2>
+
+                    <ul class="price__ul">
+                        <li class="price__li">
+                            <img src="assets/img/only_tick.png" alt="" class="price__tick">
+                            Unlimited Bandwitch
+                        </li>
+                        <li class="price__li">
+                            <img src="assets/img/only_tick.png" alt="" class="price__tick">
+                            Encrypted Connection
+                        </li>
+                        <li class="price__li">
+                            <img src="assets/img/only_tick.png" alt="" class="price__tick">
+                            No Traffic Logs
+                        </li>
+                        <li class="price__li">
+                            <img src="assets/img/only_tick.png" alt="" class="price__tick">
+                            Works on All Devices
+                        </li>
+                    </ul>
+
+                    <h1 class="price__head">
+                        Free
+                    </h1>
+
+                    <button class="price__button">Select</button>
+                </article>
+
+                <!-- Standard -->
+                <article class="price__card">
+                    <img src="assets/img/Standard.png" alt="standard" class="price__img">
+
+                    <h2 class="price__plan">
+                        Standard Plan
+                    </h2>
+
+                    <ul class="price__ul">
+                        <li class="price__li">
+                            <img src="assets/img/only_tick.png" alt="" class="price__tick">
+                            Unlimited Bandwitch
+                        </li>
+                        <li class="price__li">
+                            <img src="assets/img/only_tick.png" alt="" class="price__tick">
+                            Encrypted Connection
+                        </li>
+                        <li class="price__li">
+                            <img src="assets/img/only_tick.png" alt="" class="price__tick">
+                            No Traffic Logs
+                        </li>
+                        <li class="price__li">
+                            <img src="assets/img/only_tick.png" alt="" class="price__tick">
+                            Works on All Devices
+                        </li>
+                        <li class="price__li">
+                            <img src="assets/img/only_tick.png" alt="" class="price__tick">
+                            Connect Anyware
+                        </li>
+                    </ul>
+
+                    <h1 class="price__head">
+                        $9 <span style="font-weight: 400;">/ mo </span>
+                    </h1>
+
+                    <button class="price__button">Select</button>
+                </article>
+
+                <!-- Premium -->
+                <article class="price__card">
+                    <img src="assets/img/Premium.png" alt="Premium" class="price__img">
+
+                    <h2 class="price__plan">
+                        Standard Plan
+                    </h2>
+
+                    <ul class="price__ul">
+                        <li class="price__li">
+                            <img src="assets/img/only_tick.png" alt="" class="price__tick">
+                            Unlimited Bandwitch
+                        </li>
+                        <li class="price__li">
+                            <img src="assets/img/only_tick.png" alt="" class="price__tick">
+                            Encrypted Connection
+                        </li>
+                        <li class="price__li">
+                            <img src="assets/img/only_tick.png" alt="" class="price__tick">
+                            No Traffic Logs
+                        </li>
+                        <li class="price__li">
+                            <img src="assets/img/only_tick.png" alt="" class="price__tick">
+                            Works on All Devices
+                        </li>
+                        <li class="price__li">
+                            <img src="assets/img/only_tick.png" alt="" class="price__tick">
+                            Connect Anyware
+                        </li>
+                        <li class="price__li">
+                            <img src="assets/img/only_tick.png" alt="" class="price__tick">
+                            Get New Features
+                        </li>
+                    </ul>
+
+                    <h1 class="price__head">
+                        $12 <span style="font-weight: 400;">/ mo </span>
+                    </h1>
+
+                    <button class="price__button">Select</button>
+                </article>
+            </div>
+        </section>
+
+        <!-- ======================= MAPS ======================= -->
+        <section class="section maps">
+            <div class="maps__container container grid">
+
+                <h1 class="maps__title">
+                    Huge Global Network <br> of Fast VPN
+                </h1>
+
+                <p class="maps__description">
+                    See <b>LaslesVPN</b> everywhere to make it easier for you when you move locations.
+                </p>
+
+                <div class="maps__images">
+                    <img src="assets/img/Global.png" alt="MAP" class="maps__img-1">
+                    <img src="assets/img/Sponsored.png" alt="" class="maps__img-2">
+                </div>
+            </div>
+        </section>
+
+        <!-- ======================= TESTIMONIALS ======================= -->
+        <section class="section testimonial" id="testimonial">
+            <div class="testimonial__container container">
+                <h1 class="testimonial__title">
+                    Trusted by Thousands of Happy Customer
+                </h1>
+                <p class="testimonial__description">
+                    These are the stories of our customers who have joined us with great pleasure when using this crazy
+                    feature.
+                </p>
+                <div class="testimonial__swiper swiper">
+                    <div class="swiper-wrapper">
+
+                        <!-- Article 1 -->
+                        <article class="testimonial__card swiper-slide">
+                            <div class="testimonial__head">
+                                <div class="testimonial__info">
+                                    <img src="assets/img/testimonial-perfil-3.png" alt="dp" class="testimonial__img">
+                                    <div class="testimonial__details">
+                                        <h3 class="testimonial__name nowrap">
+                                            Dr. Stone
+                                        </h3>
+                                        <p class="testimonial__address">
+                                            Stone World
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="testimonial__rating nowrap">
+                                    4.5 <i class="ri-star-fill" style="color: goldenrod;"></i>
+                                </div>
+                            </div>
+                            <div class="testimonial__review">
+                                <p>
+                                    “Wow... I am very happy to use this VPN, it turned out to be more than my
+                                    expectations and so far there have been no problems. LaslesVPN always the best”.
+                                </p>
+                            </div>
+                        </article>
+
+                        <!-- Article 2 -->
+                        <article class="testimonial__card swiper-slide">
+                            <div class="testimonial__head">
+                                <div class="testimonial__info">
+                                    <img src="assets/img/testimonial-perfil-3.png" alt="dp" class="testimonial__img">
+                                    <div class="testimonial__details">
+                                        <h3 class="testimonial__name nowrap">
+                                            Dr. Stone
+                                        </h3>
+                                        <p class="testimonial__address">
+                                            Stone World
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="testimonial__rating nowrap">
+                                    4.5 <i class="ri-star-fill" style="color: goldenrod;"></i>
+                                </div>
+                            </div>
+                            <div class="testimonial__review">
+                                <p>
+                                    “Wow... I am very happy to use this VPN, it turned out to be more than my
+                                    expectations and so far there have been no problems. LaslesVPN always the best”.
+                                </p>
+                            </div>
+                        </article>
+
+                        <!-- Article 3 -->
+                        <article class="testimonial__card swiper-slide">
+                            <div class="testimonial__head">
+                                <div class="testimonial__info">
+                                    <img src="assets/img/testimonial-perfil-3.png" alt="dp" class="testimonial__img">
+                                    <div class="testimonial__details">
+                                        <h3 class="testimonial__name nowrap">
+                                            Dr. Stone
+                                        </h3>
+                                        <p class="testimonial__address">
+                                            Stone World
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="testimonial__rating nowrap">
+                                    4.5 <i class="ri-star-fill" style="color: goldenrod;"></i>
+                                </div>
+                            </div>
+                            <div class="testimonial__review">
+                                <p>
+                                    “Wow... I am very happy to use this VPN, it turned out to be more than my
+                                    expectations and so far there have been no problems. LaslesVPN always the best”.
+                                </p>
+                            </div>
+                        </article>
+
+                        <!-- Article 4 -->
+                        <article class="testimonial__card swiper-slide">
+                            <div class="testimonial__head">
+                                <div class="testimonial__info">
+                                    <img src="assets/img/testimonial-perfil-3.png" alt="dp" class="testimonial__img">
+                                    <div class="testimonial__details">
+                                        <h3 class="testimonial__name nowrap">
+                                            Dr. Stone
+                                        </h3>
+                                        <p class="testimonial__address">
+                                            Stone World
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="testimonial__rating nowrap">
+                                    4.5 <i class="ri-star-fill" style="color: goldenrod;"></i>
+                                </div>
+                            </div>
+                            <div class="testimonial__review">
+                                <p>
+                                    “Wow... I am very happy to use this VPN, it turned out to be more than my
+                                    expectations and so far there have been no problems. LaslesVPN always the best”.
+                                </p>
+                            </div>
+                        </article>
+
+
+                    </div>
+
+                    <!-- <div class="swiper-pagination"></div> -->
+
+                    <div class="swiper-button-prev">
+                        <i class="ri-arrow-left-line"></i>
+                    </div>
+                    <div class="swiper-button-next">
+                        <i class="ri-arrow-right-line"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- ======================= SUB ======================= -->
+    <section class="subscribe container grid">
+        <div class="subscribe__data">
+            <h1 class="subscribe__title">
+                Subscribe Now for Get Special Features!
+            </h1>
+            <p class="subscribe__description">
+                Let's subscribe with us and find the fun.
+            </p>
+        </div>
+
+        <div class="sub__button">
+            <button class="button">Subscribe Now</button>
+        </div>
+    </section>
+
+    <!-- ======================= FOOTER ======================= -->
+    <footer class="footer" id="help">
+
+        <div class="footer__container container grid">
+            <div>
+                <a href="" class="footer__logo">
+                    <img src="assets/img/logo.png" alt="logo" height="41px" width="41px">
+                    <span class="nav__vpn">Lasles<b>VPN</b></span>
+                </a>
+
+                <p class="footer__description">
+                    Lasles<b>VPN</b> is a private virtual network <br> that has unique features and <br> has high
+                    security.
+                </p>
+
+                <div class="footer__social">
+                    <a href="https://www.instagram.com/pankaj___026/" target="_blank" class="footer__social-links">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/pankaj-gupta-288374243/" target="_blank"
+                        class="footer__social-links">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
+
+                    <a href="https://twitter.com/" target="_blank" class="footer__social-links">
+                        <i class="ri-twitter-x-line"></i>
+                    </a>
+
+                </div>
+                <span class="footer__copy">
+                    &#169; All Right Reserved By SP
+                </span>
+            </div>
+
+            <div class="footer__data grid">
+                <!-- PRODUCT -->
+                <div>
+
+                    <h3 class="footer__title">Product</h3>
+
+                    <ul class="footer__ul">
+                        <li>
+                            <a href="" class="footer__li">Download</a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer__li">Pricing</a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer__li">Location</a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer__li">Server</a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer__li">Countries</a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer__li">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- ENGAGE -->
+                <div>
+                    <h3 class="footer__title">
+                        Engage
+                    </h3>
+
+                    <ul class="footer__ul">
+                        <li>
+                            <a href="" class="footer__li">LaslesVPN ?</a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer__li">
+                                FAQ
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer__li">
+                                Tutorials
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer__li">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer__li">
+                                Privacy Policy
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer__li">
+                                Terms of Service
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- EARN MONY -->
+                <div>
+                    <h3 class="footer__title">
+                        Earn Money
+                    </h3>
+
+                    <ul class="footer__ul">
+                        <li>
+                            <a href="" class="footer__li">Affiliate</a>
+                        </li>
+
+                        <li>
+                            <a href="" class="footer__li">
+                                Become Partner
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- ======================= SCROLL REVEAL JS ======================= -->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!-- ======================= SWIPER SCRIPT ======================= -->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!-- ======================= SCRIPT ======================= -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+
+</html>
